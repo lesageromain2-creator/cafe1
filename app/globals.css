@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-max-width: 1280px;
+}
+
+body {
+  font-family: var(--font-heading), system-ui, sans-serif;
+  background: #FFFFFF;
+  color: #0F0F0F;
+}
+
+.container-page {
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@layer utilities {
+  .heading-display {
+    @apply font-heading text-[80px] md:text-[120px] lg:text-[150px] leading-[80%] tracking-[0.01em] text-ink;
+  }
+  .heading-1 {
+    @apply font-heading text-[42px] md:text-[60px] leading-[110%] tracking-[-0.01em] text-ink;
+  }
+  .heading-2 {
+    @apply font-heading text-[42px] leading-[110%] tracking-[0.01em] text-ink;
+  }
+  .heading-3 {
+    @apply font-heading text-[30px] leading-[130%] tracking-[0.01em] text-ink;
+  }
+  .para-lg {
+    @apply font-heading text-[20px] leading-[130%] tracking-[0.01em] text-ink;
+  }
+  .para-md {
+    @apply font-heading text-[20px] leading-[130%] tracking-[0.01em] text-ink;
+  }
+  .link-style {
+    @apply font-link text-[26px] leading-[139%] tracking-[-0.01em] uppercase text-ink;
+  }
+  .caption {
+    @apply font-heading text-[15px] leading-[110%] tracking-[-0.05em] uppercase text-ink;
+  }
+}
