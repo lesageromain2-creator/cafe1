@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LsdevFooterCredit from "@/components/LsdevFooterCredit";
 
 export default function Footer() {
   return (
@@ -31,6 +32,7 @@ export default function Footer() {
         <p className="font-sans text-xs font-bold tracking-[-0.05em] uppercase text-ink">
           La Page © {new Date().getFullYear()} — Tous droits réservés
         </p>
+        <LsdevFooterCredit />
       </div>
       <div className="h-8 bg-ink w-full" aria-hidden />
     </footer>
